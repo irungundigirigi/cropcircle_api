@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // PostgreSQL client setup
 const client = new Client({
-    connectionString: "postgres://default:J6gUW2seGlQR@ep-blue-haze-a4cb6wwh.us-east-1.postgres.vercel-storage.com:5432/verceldb", // Use environment variable to store the connection string
+    connectionString: "", // Use environment variable to store the connection string
     ssl: {
         rejectUnauthorized: false, // Disable SSL certificate verification
     },
