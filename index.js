@@ -5,11 +5,11 @@ const { Client } = require('pg');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const CONNECTION_STRING = process.env.CONNECTION_STRING;
+const CONNECTION_STR = process.env.CONNECTION_STRING;
 
 // PostgreSQL client setup
 const client = new Client({
-    connectionString: CONNECTION_STRING,
+    connectionString: CONNECTION_STR,
     ssl: {
         rejectUnauthorized: false,
     },
